@@ -1,0 +1,10 @@
+pipeline {
+    agent {label 'agent1'} 
+    stages {
+        stage('build1 job') { 
+            steps {
+                sh 'whoami'
+                //sh 'cd https://github.com/Debasis91/jenkins_Assignment.git/ && git pull origin devlop'
+            }
+        }
+        }
